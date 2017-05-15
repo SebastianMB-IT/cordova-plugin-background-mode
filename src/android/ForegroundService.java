@@ -34,6 +34,8 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.PowerManager;
 
+import org.nethserver.nethcti.R;
+
 import org.json.JSONObject;
 
 import static android.os.PowerManager.PARTIAL_WAKE_LOCK;
@@ -166,7 +168,7 @@ public class ForegroundService extends Service {
                 .setContentTitle(title)
                 .setContentText(text)
                 .setOngoing(true)
-                .setSmallIcon(getIconResId(settings));
+                .setSmallIcon(R.drawable.check);
 
         if (settings.optBoolean("hidden", true)) {
             notification.setPriority(Notification.PRIORITY_MIN);
