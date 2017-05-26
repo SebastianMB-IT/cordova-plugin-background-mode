@@ -34,7 +34,7 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.PowerManager;
 
-import org.nethserver.nethcti.R;
+import it.nethesis.nethcti.R;
 
 import org.json.JSONObject;
 
